@@ -17,4 +17,12 @@ public class JetpackController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, thrustForce);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Obstacle"))
+        {
+            Debug.Log("Game Over!");
+        }
+    }
 }
