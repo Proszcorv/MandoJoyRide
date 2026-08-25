@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JetpackController : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class JetpackController : MonoBehaviour
     {
         if (collision.CompareTag("Obstacle"))
         {
-            Debug.Log("Game Over!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
