@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a7c2984e382b14f47bcd2d91ea6f72ee
+guid: c861fc1e3623bcc40b0613173279c356
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5142865817651565281
-    second: Gemini_Generated_Image_618el9618el9618e (1)_0
+      213: 4398261568723245839
+    second: 13-135265_pixel-tie-fighter-hd-png-download_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,9 +40,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gemini_Generated_Image_618el9618el9618e (1)_0
+      name: 13-135265_pixel-tie-fighter-hd-png-download_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 2816
-        height: 1042
+        width: 567
+        height: 482
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e2de9c86312f5740800000000000000
-      internalID: 5142865817651565281
+      spriteID: f0b50010893c90d30800000000000000
+      internalID: 4398261568723245839
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gemini_Generated_Image_618el9618el9618e (1)_0: 5142865817651565281
+      13-135265_pixel-tie-fighter-hd-png-download_0: 4398261568723245839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 public class JetpackController : MonoBehaviour
 {
     [SerializeField] private float thrustForce = 5f;
+
+    [SerializeField] private GameObject jetpackFire;
+
     private Rigidbody2D rb;
 
     void Start()
@@ -16,6 +19,18 @@ public class JetpackController : MonoBehaviour
         if (Input.GetButton("Jump") || Input.GetMouseButton(0))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, thrustForce);
+
+            if (jetpackFire != null)
+            {
+                jetpackFire.SetActive(true);
+            }
+        }
+        else
+        {
+            if (jetpackFire != null)
+            {
+                jetpackFire.SetActive(false);
+            }
         }
     }
 
