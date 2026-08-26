@@ -12,10 +12,10 @@ public class JetpackController : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer; 
-
     private bool isGrounded;
-
+    private bool isDead = false;
     private Rigidbody2D rb;
+    private ScoreManager scoreManager;
 
     void Start()
     {
@@ -24,10 +24,13 @@ public class JetpackController : MonoBehaviour
         {
             animator = GetComponent<Animator>();
         }
+        scoreManager = FindAnyObjectByType<ScoreManager>();
     }
 
     void Update()
     {
+        if (isDead) return;
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         animator.SetBool("isGrounded", isGrounded);
 
@@ -51,9 +54,13 @@ public class JetpackController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Obstacle"))
+        if (collision.CompareTag("Obstacle") && !isDead)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            isDead = true;
+            if (scoreManager != null)
+            {
+                scoreManager.TriggerGameOver();
+            }
         }
     }
 
