@@ -49,7 +49,7 @@ public class ObstacleSpawner : MonoBehaviour
 
         if (obstaclePrefab.name.Contains("Rock"))
         {
-            spawnY = -4.2f;
+            spawnY = -4.3f;
         }
         else
         {
