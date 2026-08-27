@@ -204,7 +204,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 120, y: 8.091734}
+  m_Size: {x: 158.91745, y: 8.091734}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -219,7 +219,7 @@ Transform:
   m_GameObject: {fileID: 4236455}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.03, z: 0}
+  m_LocalPosition: {x: 0.0045, y: 0.03, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1313,13 +1313,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1126677535}
   - component: {fileID: 1126677534}
+  - component: {fileID: 1126677536}
   m_Layer: 0
   m_Name: JetpackFire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1126677534
 SpriteRenderer:
   serializedVersion: 3
@@ -1388,13 +1389,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126677533}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.537, y: 1.265, z: 0}
+  m_LocalRotation: {x: -0.020872181, y: -0.00012667454, z: 0.00014075376, w: 0.99978215}
+  m_LocalPosition: {x: -2.5370007, y: 1.265, z: 0}
   m_LocalScale: {x: 0.04176302, y: 0.04246698, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1309366014}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -2.392, y: -0.015, z: 0.016}
+--- !u!95 &1126677536
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126677533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 004e08eb8b50f4c4ea267786c63fdfb6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1193017785
 GameObject:
   m_ObjectHideFlags: 0
