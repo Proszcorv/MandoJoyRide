@@ -16,6 +16,7 @@ public class JetpackController : MonoBehaviour
     private bool isDead = false;
     private Rigidbody2D rb;
     private ScoreManager scoreManager;
+    private JetpackHeatMeter heatMeter;
 
     void Start()
     {
@@ -25,6 +26,8 @@ public class JetpackController : MonoBehaviour
             animator = GetComponent<Animator>();
         }
         scoreManager = FindAnyObjectByType<ScoreManager>();
+
+        heatMeter = FindAnyObjectByType<JetpackHeatMeter>();
     }
 
     void Update()
@@ -34,34 +37,34 @@ public class JetpackController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         animator.SetBool("isGrounded", isGrounded);
 
-        if (Input.GetButton("Jump") || Input.GetMouseButton(0))
+        bool wantsThrust = Input.GetButton("Jump") || Input.GetMouseButton(0);
+
+        if (wantsThrust)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, thrustForce);
-
-            if (jetpackFire != null)
-            {
-                jetpackFire.SetActive(true);
-            }
+            if (jetpackFire != null) jetpackFire.SetActive(true);
         }
         else
         {
-            if (jetpackFire != null)
-            {
-                jetpackFire.SetActive(false);
-            }
+            if (jetpackFire != null) jetpackFire.SetActive(false);
         }
+
+        if (heatMeter != null) heatMeter.UpdateHeat(wantsThrust, this);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Obstacle") && !isDead)
         {
-            isDead = true;
-            if (scoreManager != null)
-            {
-                scoreManager.TriggerGameOver();
-            }
+            Explode();
         }
+    }
+
+    public void Explode()
+    {
+        if (isDead) return;
+        isDead = true;
+        if (scoreManager != null) scoreManager.TriggerGameOver();
     }
 
     private void OnDrawGizmosSelected()

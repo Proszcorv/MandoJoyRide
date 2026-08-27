@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class ScrollBackground : MonoBehaviour
 {
-    [SerializeField] private float speed = 2f;
-    [SerializeField] private float accelerationRate = 0.2f;
-    [SerializeField] private float maxSpeed = 15f;
+    [Tooltip("1 = pont az alapsebességgel megy (közeli réteg). Kisebb érték = lassabb, távolabbi réteg (parallax).")]
+    [SerializeField] private float speedMultiplier = 1f;
 
     private Vector3 startPosition;
     private float repeatWidth;
@@ -17,11 +16,7 @@ public class ScrollBackground : MonoBehaviour
 
     void Update()
     {
-        if (speed < maxSpeed)
-        {
-            speed += accelerationRate * Time.deltaTime;
-        }
-
+        float speed = GameSpeedManager.Instance.CurrentBaseSpeed * speedMultiplier;
         transform.Translate(Vector3.left * speed * Time.deltaTime);
 
         if (transform.position.x < startPosition.x - repeatWidth)
