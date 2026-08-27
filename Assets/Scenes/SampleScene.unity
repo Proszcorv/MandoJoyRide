@@ -150,6 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScrollBackground
   speed: 0.2
+  accelerationRate: 0.05
+  maxSpeed: 12
 --- !u!212 &4236457
 SpriteRenderer:
   serializedVersion: 3
@@ -2613,6 +2615,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScrollBackground
   speed: 2
+  accelerationRate: 0.05
+  maxSpeed: 15
 --- !u!1 &1783807582
 GameObject:
   m_ObjectHideFlags: 0

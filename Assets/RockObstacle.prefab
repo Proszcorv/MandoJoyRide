@@ -107,6 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveLeft
   speed: 5
+  accelerationRate: 0.05
+  maxSpeed: 15
 --- !u!61 &8780919234866418884
 BoxCollider2D:
   m_ObjectHideFlags: 0
