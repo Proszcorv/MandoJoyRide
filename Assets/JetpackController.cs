@@ -7,6 +7,12 @@ public class JetpackController : MonoBehaviour
 
     [SerializeField] private GameObject jetpackFire;
 
+    [SerializeField] private GameObject explosionPrefab;
+
+    [SerializeField] private Transform explosionSpawnPoint;
+
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
     [Header("Animáció és Talaj érzékelés")]
     public Animator animator;
     public Transform groundCheck;
@@ -64,6 +70,16 @@ public class JetpackController : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
+
+        if (explosionPrefab != null)
+        {
+            Vector3 spawnPos = explosionSpawnPoint != null ? explosionSpawnPoint.position : transform.position;
+            Instantiate(explosionPrefab, spawnPos, Quaternion.identity);
+        }
+
+        if (spriteRenderer != null) spriteRenderer.enabled = false;
+        if (jetpackFire != null) jetpackFire.SetActive(false);
+
         if (scoreManager != null) scoreManager.TriggerGameOver();
     }
 

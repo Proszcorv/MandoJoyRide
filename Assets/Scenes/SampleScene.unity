@@ -1961,6 +1961,7 @@ Transform:
   - {fileID: 1126677535}
   - {fileID: 1731801945}
   - {fileID: 957788028}
+  - {fileID: 1599204319}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1309366015
@@ -1977,6 +1978,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::JetpackController
   thrustForce: 5
   jetpackFire: {fileID: 1126677533}
+  explosionPrefab: {fileID: 8772872610509670659, guid: 33c692715edff7e44b7087b9c49a0907, type: 3}
+  explosionSpawnPoint: {fileID: 1599204319}
+  spriteRenderer: {fileID: 1309366013}
   animator: {fileID: 1309366018}
   groundCheck: {fileID: 957788028}
   groundCheckRadius: 0.2
@@ -2456,6 +2460,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543084568}
   m_CullTransparentMesh: 1
+--- !u!1 &1599204318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1599204319}
+  m_Layer: 0
+  m_Name: ExplosionPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1599204319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599204318}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.22, y: 1.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1309366014}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1659879779
 GameObject:
   m_ObjectHideFlags: 0
