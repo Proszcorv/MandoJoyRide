@@ -4,15 +4,19 @@ using UnityEngine.UI;
 public class JetpackHeatMeter : MonoBehaviour
 {
     [Header("Hõmérséklet beállítások")]
-    [SerializeField] private float heatIncreaseRate = 0.5f;   // ennyivel telik/mp, ha nyomod
-    [SerializeField] private float heatDecreaseRate = 0.25f;  // ennyivel csökken/mp, ha nem nyomod
-    [SerializeField] private float overheatExplodeDelay = 1.5f; // mennyi ideig bírja tele állapotban, mielõtt bumm
+    [SerializeField] private float heatIncreaseRate = 0.5f;
+    [SerializeField] private float heatDecreaseRate = 0.25f;
+    [SerializeField] private float overheatExplodeDelay = 1.5f;
     [SerializeField] private float resumeThreshold = 0.1f;
     [SerializeField] private float shakeThreshold = 0.95f;
 
     [Header("UI")]
-    [SerializeField] private Image heatFillImage;  // Image Type: Filled, Fill Method: Vertical
-    [SerializeField] private RectTransform meterRect; // a rezgéshez
+    [SerializeField] private Image heatFillImage;
+    [SerializeField] private RectTransform meterRect;
+
+    [Header("Hang")]
+    [SerializeField] private AudioClip warningSound;
+    [SerializeField] private AudioSource warningAudioSource;
 
     private float heat = 0f;
     private bool isOverheated = false;
@@ -64,10 +68,20 @@ public class JetpackHeatMeter : MonoBehaviour
         if (shouldShake && meterRect != null)
         {
             meterRect.anchoredPosition = originalPos + new Vector2(Random.Range(-3f, 3f), Random.Range(-3f, 3f));
+
+            if (warningAudioSource != null && !warningAudioSource.isPlaying)
+            {
+                warningAudioSource.Play();
+            }
         }
-        else if (meterRect != null)
+        else
         {
-            meterRect.anchoredPosition = originalPos;
+            if (meterRect != null) meterRect.anchoredPosition = originalPos;
+
+            if (warningAudioSource != null && warningAudioSource.isPlaying)
+            {
+                warningAudioSource.Stop();
+            }
         }
     }
 }

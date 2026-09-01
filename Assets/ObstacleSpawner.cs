@@ -12,6 +12,9 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private float difficultyRate = 0.05f;
     [SerializeField] private float minPossibleTime = 0.6f;
 
+    [SerializeField] private AudioClip tieSpawnSound;
+    [SerializeField] private AudioSource audioSource;
+
     private float timer = 0f;
     private float nextSpawnTime;
 
@@ -59,5 +62,10 @@ public class ObstacleSpawner : MonoBehaviour
         Vector3 spawnPos = new Vector3(transform.position.x, spawnY, 0);
 
         Instantiate(obstaclePrefab, spawnPos, Quaternion.identity);
+
+        if (obstaclePrefab.name.Contains("TIE") && tieSpawnSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(tieSpawnSound);
+        }
     }
 }
