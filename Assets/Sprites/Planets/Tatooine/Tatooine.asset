@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc16f63976d7df48b1fa83af5a147f9, type: 3}
+  m_Name: Tatooine
+  m_EditorClassIdentifier: Assembly-CSharp::PlanetData
+  planetName: Tatooine
+  skySprite: {fileID: -5688732857420123894, guid: f4b6f8f0f6e2e4c47b334cf6deb5f16c, type: 3}
+  mountainsSprite: {fileID: 7270341130334662708, guid: afcccb385e26740478e9ba7b3745daf6, type: 3}
+  groundSprite: {fileID: 5142865817651565281, guid: 0817e92f88f95ff4eaa3af3d6099af75, type: 3}
+  floorColor: {r: 0.9607844, g: 0.76470596, b: 0.5254902, a: 1}
+  scoreThreshold: 0
