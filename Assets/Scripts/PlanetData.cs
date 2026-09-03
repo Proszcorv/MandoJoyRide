@@ -10,4 +10,5 @@ public class PlanetData : ScriptableObject
     public Color floorColor = Color.white;
     public int scoreThreshold;
     public Vector3 skyScale = Vector3.one;
+    public GameObject groundObstaclePrefab;
 }

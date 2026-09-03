@@ -256,6 +256,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 781548852}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &397109151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 397109153}
+  - component: {fileID: 397109152}
+  m_Layer: 0
+  m_Name: GroundSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &397109152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397109151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a512719c31e7f04fba099ca6c48a2a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
+  obstaclePrefab: {fileID: 3310017645708670742, guid: 6ef3564c16aca1f45ad06e7d82aad620, type: 3}
+  isGroundSpawner: 1
+  minSpawnTime: 10
+  maxSpawnTime: 12
+  difficultyRate: 0.3
+  minPossibleTime: 0.6
+  tieSpawnSound: {fileID: 0}
+  audioSource: {fileID: 0}
+--- !u!4 &397109153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397109151}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.32, y: -0.49, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484865034 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6400914215708518970, guid: 91f3179d1285bc84d903f7c5ea73f232, type: 3}
@@ -1348,6 +1400,7 @@ MonoBehaviour:
   planets:
   - {fileID: 11400000, guid: 0fe2e471e070d8544b1c286182be1958, type: 2}
   - {fileID: 11400000, guid: eb7ca372650ee0c48a522d111ae40316, type: 2}
+  groundSpawner: {fileID: 397109152}
 --- !u!114 &829456394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3610,10 +3663,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1659879781}
   - component: {fileID: 1659879780}
-  - component: {fileID: 1659879782}
   - component: {fileID: 1659879783}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: AirSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3632,6 +3684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
   obstaclePrefab: {fileID: 3310017645708670742, guid: 92ff2eb7791a1284693e35dff8b3189d, type: 3}
+  isGroundSpawner: 0
   minSpawnTime: 8
   maxSpawnTime: 10
   difficultyRate: 0.1
@@ -3653,25 +3706,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1659879782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659879779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a512719c31e7f04fba099ca6c48a2a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
-  obstaclePrefab: {fileID: 3310017645708670742, guid: 6ef3564c16aca1f45ad06e7d82aad620, type: 3}
-  minSpawnTime: 10
-  maxSpawnTime: 12
-  difficultyRate: 0.3
-  minPossibleTime: 0.6
-  tieSpawnSound: {fileID: 0}
-  audioSource: {fileID: 0}
 --- !u!82 &1659879783
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4489,6 +4523,7 @@ SceneRoots:
   - {fileID: 1042148061}
   - {fileID: 2128542696}
   - {fileID: 1659879781}
+  - {fileID: 397109153}
   - {fileID: 2041863476}
   - {fileID: 1776410970}
   - {fileID: 4236458}

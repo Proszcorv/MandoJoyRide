@@ -7,6 +7,7 @@ public class PlanetManager : MonoBehaviour
     [SerializeField] private SpriteRenderer groundRenderer;
     [SerializeField] private SpriteRenderer floorRenderer;
     [SerializeField] private PlanetData[] planets;
+    [SerializeField] private ObstacleSpawner groundSpawner;
 
     void Start()
     {
@@ -25,6 +26,10 @@ public class PlanetManager : MonoBehaviour
         floorRenderer.color = planet.floorColor;
         skyRenderer.sprite = planet.skySprite;
         skyRenderer.transform.localScale = planet.skyScale;
+        if (groundSpawner != null && planet.groundObstaclePrefab != null)
+        {
+            groundSpawner.SetObstaclePrefab(planet.groundObstaclePrefab);
+        }
     }
 
     public void SelectPlanet(int planetIndex)

@@ -19,3 +19,4 @@ MonoBehaviour:
   floorColor: {r: 0, g: 0, b: 0, a: 1}
   scoreThreshold: 1000
   skyScale: {x: 1.067, y: 0.858, z: 1}
+  groundObstaclePrefab: {fileID: 3310017645708670742, guid: 9a4de28d505e02f47a27e6c6fc75ea63, type: 3}

@@ -4,6 +4,9 @@ public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject obstaclePrefab;
 
+    [Header("Spawner Típusa")]
+    [SerializeField] private bool isGroundSpawner = false;
+
     [Header("Kezdeti idõközök")]
     [SerializeField] private float minSpawnTime = 1.5f;
     [SerializeField] private float maxSpawnTime = 3.0f;
@@ -48,24 +51,22 @@ public class ObstacleSpawner : MonoBehaviour
 
     void SpawnObstacle()
     {
-        float spawnY;
-
-        if (obstaclePrefab.name.Contains("Rock"))
-        {
-            spawnY = -4.3f;
-        }
-        else
-        {
-            spawnY = Random.Range(-1f, 4.5f);
-        }
+        float spawnY = isGroundSpawner ? -4.3f : Random.Range(-1f, 4.5f);
 
         Vector3 spawnPos = new Vector3(transform.position.x, spawnY, 0);
-
         Instantiate(obstaclePrefab, spawnPos, Quaternion.identity);
 
-        if (obstaclePrefab.name.Contains("TIE") && tieSpawnSound != null && audioSource != null)
+        if (!isGroundSpawner && tieSpawnSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(tieSpawnSound);
+        }
+    }
+
+    public void SetObstaclePrefab(GameObject newPrefab)
+    {
+        if (newPrefab != null)
+        {
+            obstaclePrefab = newPrefab;
         }
     }
 }
