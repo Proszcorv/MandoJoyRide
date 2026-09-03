@@ -23,17 +23,26 @@ public class PlanetManager : MonoBehaviour
         mountainsRenderer.sprite = planet.mountainsSprite;
         groundRenderer.sprite = planet.groundSprite;
         floorRenderer.color = planet.floorColor;
+        skyRenderer.sprite = planet.skySprite;
+        skyRenderer.transform.localScale = planet.skyScale;
     }
 
-    public void GoToNextPlanet()
+    public void SelectPlanet(int planetIndex)
     {
-        int currentIndex = PlayerPrefs.GetInt("CurrentPlanet", 0);
-        int nextIndex = currentIndex + 1;
-
-        if (nextIndex < planets.Length)
+        if (planetIndex >= 0 && planetIndex < planets.Length)
         {
-            PlayerPrefs.SetInt("CurrentPlanet", nextIndex);
-            PlayerPrefs.Save();
+            int highScore = PlayerPrefs.GetInt("HighScore", 0);
+
+            if (highScore >= planets[planetIndex].scoreThreshold)
+            {
+                PlayerPrefs.SetInt("CurrentPlanet", planetIndex);
+                PlayerPrefs.Save();
+                ApplyPlanet(planets[planetIndex]);
+            }
+            else
+            {
+                Debug.Log("Ez a bolygó még zárolva van! Szükséges pont: " + planets[planetIndex].scoreThreshold);
+            }
         }
     }
 }

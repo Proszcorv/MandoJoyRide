@@ -17,4 +17,5 @@ MonoBehaviour:
   mountainsSprite: {fileID: 21300000, guid: 1ab8d03350bf1144fa2e46dc0174b286, type: 3}
   groundSprite: {fileID: 21300000, guid: f8d07f054436570448b3ea601177a3ff, type: 3}
   floorColor: {r: 0, g: 0, b: 0, a: 1}
-  scoreThreshold: 0
+  scoreThreshold: 1000
+  skyScale: {x: 1.067, y: 0.858, z: 1}

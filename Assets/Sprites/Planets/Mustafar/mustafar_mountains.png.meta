@@ -5,21 +5,6 @@ TextureImporter:
   - first:
       213: -1194723168883068821
     second: mustafar_mountains_0
-  - first:
-      213: 2551441581986186424
-    second: mustafar_mountains_1
-  - first:
-      213: 5534997842869602551
-    second: mustafar_mountains_2
-  - first:
-      213: -4862431560025994398
-    second: mustafar_mountains_3
-  - first:
-      213: -7351478001530017685
-    second: mustafar_mountains_4
-  - first:
-      213: -3022468690146748286
-    second: mustafar_mountains_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 108
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -131,10 +116,10 @@ TextureImporter:
       name: mustafar_mountains_0
       rect:
         serializedVersion: 2
-        x: 887
-        y: 1055
-        width: 46
-        height: 41
+        x: 0
+        y: 0
+        width: 3168
+        height: 1264
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,116 +130,6 @@ TextureImporter:
       bones: []
       spriteID: b60bbc99b9d7b6fe0800000000000000
       internalID: -1194723168883068821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mustafar_mountains_1
-      rect:
-        serializedVersion: 2
-        x: 944
-        y: 1078
-        width: 30
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b48277c99a886320800000000000000
-      internalID: 2551441581986186424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mustafar_mountains_2
-      rect:
-        serializedVersion: 2
-        x: 823
-        y: 959
-        width: 88
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f8cbc0663340dc40800000000000000
-      internalID: 5534997842869602551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mustafar_mountains_3
-      rect:
-        serializedVersion: 2
-        x: 2393
-        y: 999
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26b8008224c258cb0800000000000000
-      internalID: -4862431560025994398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mustafar_mountains_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2940
-        height: 965
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b6864b815bd4af990800000000000000
-      internalID: -7351478001530017685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mustafar_mountains_5
-      rect:
-        serializedVersion: 2
-        x: 2322
-        y: 892
-        width: 76
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28810137db80e06d0800000000000000
-      internalID: -3022468690146748286
       vertices: []
       indices: 
       edges: []
@@ -274,11 +149,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       mustafar_mountains_0: -1194723168883068821
-      mustafar_mountains_1: 2551441581986186424
-      mustafar_mountains_2: 5534997842869602551
-      mustafar_mountains_3: -4862431560025994398
-      mustafar_mountains_4: -7351478001530017685
-      mustafar_mountains_5: -3022468690146748286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -12,7 +12,6 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI gameOverText;
     public TextMeshProUGUI finalScoreText;
     public TextMeshProUGUI highScoreText;
-    public GameObject newPlanetButton;
 
     private float score;
     private bool isGameOver = false;
@@ -38,25 +37,20 @@ public class ScoreManager : MonoBehaviour
 
         gameOverPanel.SetActive(true);
 
-        int highScore = PlayerPrefs.GetInt("HighScore", 0);
+        int currentPlanet = PlayerPrefs.GetInt("CurrentPlanet", 0);
+        string highScoreKey = "HighScore_" + currentPlanet;
+
+        int highScore = PlayerPrefs.GetInt(highScoreKey, 0);
+
         if (finalScore > highScore)
         {
             highScore = finalScore;
-            PlayerPrefs.SetInt("HighScore", highScore);
+            PlayerPrefs.SetInt(highScoreKey, highScore);
             PlayerPrefs.Save();
         }
 
         finalScoreText.text = "Final score: " + finalScore;
         highScoreText.text = "High score: " + highScore;
-
-        if (highScore >= 1000)
-        {
-            newPlanetButton.SetActive(true);
-        }
-        else
-        {
-            newPlanetButton.SetActive(false);
-        }
     }
 
     public void RestartGame()

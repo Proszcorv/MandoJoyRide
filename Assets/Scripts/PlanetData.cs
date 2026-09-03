@@ -9,4 +9,5 @@ public class PlanetData : ScriptableObject
     public Sprite groundSprite;
     public Color floorColor = Color.white;
     public int scoreThreshold;
+    public Vector3 skyScale = Vector3.one;
 }

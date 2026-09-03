@@ -18,3 +18,4 @@ MonoBehaviour:
   groundSprite: {fileID: 5142865817651565281, guid: 0817e92f88f95ff4eaa3af3d6099af75, type: 3}
   floorColor: {r: 0.9607844, g: 0.76470596, b: 0.5254902, a: 1}
   scoreThreshold: 0
+  skyScale: {x: 0.7050858, y: 0.5666879, z: 1}

@@ -108,6 +108,9 @@ public class JetpackController : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
+        if (jetpackAudioSource != null) jetpackAudioSource.Stop();
+        if (footstepAudioSource != null) footstepAudioSource.Stop();
+
         if (explosionPrefab != null)
         {
             Vector3 spawnPos = explosionSpawnPoint != null ? explosionSpawnPoint.position : transform.position;
