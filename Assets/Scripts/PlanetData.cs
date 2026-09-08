@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewPlanet", menuName = "Game/Planet")]
@@ -13,5 +14,4 @@ public class PlanetData : ScriptableObject
     public GameObject groundObstaclePrefab;
     public GameObject projectileObstaclePrefab;
     public AudioClip projectileSound;
-    public AudioSource projectileSource;
 }

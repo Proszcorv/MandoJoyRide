@@ -21,5 +21,4 @@ MonoBehaviour:
   skyScale: {x: 1.067, y: 0.858, z: 1}
   groundObstaclePrefab: {fileID: 3310017645708670742, guid: 9a4de28d505e02f47a27e6c6fc75ea63, type: 3}
   projectileObstaclePrefab: {fileID: 5054685518342509746, guid: 41564118d38f8674db735b22110ccd78, type: 3}
-  projectileSound: {fileID: 0}
-  projectileSource: {fileID: 0}
+  projectileSound: {fileID: 8300000, guid: b9460998f88704940b0064b2d225cce5, type: 3}

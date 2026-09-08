@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class MenuManager : MonoBehaviour
         public Button planetButton;
         public PlanetData planetData;
         public Outline outlineComponent;
+        public GameObject lockObject;
+        public TextMeshProUGUI lockTextComponent;
     }
 
     [Header("Bolygó Gombok Beállításai")]
@@ -77,6 +80,16 @@ public class MenuManager : MonoBehaviour
             if (slot.outlineComponent != null)
             {
                 slot.outlineComponent.enabled = (i == currentPlanet);
+            }
+
+            if (slot.lockObject != null)
+            {
+                slot.lockObject.SetActive(!isUnlocked);
+            }
+
+            if (slot.lockTextComponent != null && !isUnlocked)
+            {
+                slot.lockTextComponent.text = "Reach " + slot.planetData.scoreThreshold;
             }
         }
     }

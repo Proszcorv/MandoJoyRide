@@ -34,9 +34,9 @@ public class PlanetManager : MonoBehaviour
         {
             groundSpawner.SetProjectilePrefab(planet.projectileObstaclePrefab);
         }
-        if (planet.projectileSource != null && planet.projectileSound != null)
+        if (groundSpawner != null && planet.projectileSound != null)
         {
-            planet.projectileSource.clip = planet.projectileSound;
+            groundSpawner.SetProjectileSound(planet.projectileSound);
         }
     }
 

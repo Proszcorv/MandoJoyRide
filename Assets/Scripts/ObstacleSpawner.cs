@@ -102,6 +102,11 @@ public class ObstacleSpawner : MonoBehaviour
         }
     }
 
+    public void SetProjectileSound(AudioClip newSound)
+    {
+        projectileSpawnSound = newSound;
+    }
+
     IEnumerator SpawnProjectileDelayed(GameObject parentObj, bool isGround)
     {
         float delay = isGround ? Random.Range(3f, 4.5f) : Random.Range(0.3f, 0.7f);
