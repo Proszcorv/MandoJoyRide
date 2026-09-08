@@ -1,0 +1,544 @@
+fileFormatVersion: 2
+guid: 3ee8b1964b7083a409fd3706c01f2e2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1466964273944389568
+    second: lava_projectile_0
+  - first:
+      213: -462172584085196986
+    second: lava_projectile_1
+  - first:
+      213: -7579866114929725592
+    second: lava_projectile_2
+  - first:
+      213: -732696918024111753
+    second: lava_projectile_3
+  - first:
+      213: 2803560248396023692
+    second: lava_projectile_4
+  - first:
+      213: -8373372901464361049
+    second: lava_projectile_5
+  - first:
+      213: 6682402126542447481
+    second: lava_projectile_6
+  - first:
+      213: -5149631658518612141
+    second: lava_projectile_7
+  - first:
+      213: 1631752048923181311
+    second: lava_projectile_8
+  - first:
+      213: 6567815133041336045
+    second: lava_projectile_9
+  - first:
+      213: 4881843851452554942
+    second: lava_projectile_10
+  - first:
+      213: 4353843195910391479
+    second: lava_projectile_11
+  - first:
+      213: -824175546950532387
+    second: lava_projectile_12
+  - first:
+      213: -2904437205900133895
+    second: lava_projectile_13
+  - first:
+      213: -247102960576875026
+    second: lava_projectile_14
+  - first:
+      213: 7588250896846600620
+    second: lava_projectile_15
+  - first:
+      213: 1136610758828163076
+    second: lava_projectile_16
+  - first:
+      213: -3585545036563122726
+    second: lava_projectile_17
+  - first:
+      213: 6491865307471845227
+    second: lava_projectile_18
+  - first:
+      213: -7490754160999901788
+    second: lava_projectile_19
+  - first:
+      213: 5186256558378029608
+    second: lava_projectile_20
+  - first:
+      213: 8537476491734527931
+    second: lava_projectile_21
+  - first:
+      213: -8155993858866502461
+    second: lava_projectile_22
+  - first:
+      213: -865722392747102661
+    second: lava_projectile_23
+  - first:
+      213: -1446755696471547852
+    second: lava_projectile_24
+  - first:
+      213: -7861948869712240381
+    second: lava_projectile_25
+  - first:
+      213: -9071738320396897937
+    second: lava_projectile_26
+  - first:
+      213: 9017273152925838922
+    second: lava_projectile_27
+  - first:
+      213: -5102486488020082723
+    second: lava_projectile_28
+  - first:
+      213: 3358359142992435769
+    second: lava_projectile_29
+  - first:
+      213: -6713593753892938374
+    second: lava_projectile_30
+  - first:
+      213: 4430390512310753676
+    second: lava_projectile_31
+  - first:
+      213: 4349121722063811143
+    second: lava_projectile_32
+  - first:
+      213: 2821934415515909504
+    second: lava_projectile_33
+  - first:
+      213: 6695908236194726068
+    second: lava_projectile_34
+  - first:
+      213: 1293280531505568363
+    second: lava_projectile_35
+  - first:
+      213: 8327947799366403195
+    second: lava_projectile_36
+  - first:
+      213: -8212034993670246473
+    second: lava_projectile_37
+  - first:
+      213: -3603231565604420169
+    second: lava_projectile_38
+  - first:
+      213: 4362818690890861698
+    second: lava_projectile_39
+  - first:
+      213: 1628656008460917532
+    second: lava_projectile_40
+  - first:
+      213: 872742261869328194
+    second: lava_projectile_41
+  - first:
+      213: -3095333369794541669
+    second: lava_projectile_42
+  - first:
+      213: -9179614229045285380
+    second: lava_projectile_43
+  - first:
+      213: 2276260117177142018
+    second: lava_projectile_44
+  - first:
+      213: 7614213451543752259
+    second: lava_projectile_45
+  - first:
+      213: 4847275986823898447
+    second: lava_projectile_46
+  - first:
+      213: 4301025569179656364
+    second: lava_projectile_47
+  - first:
+      213: 7754011963713307249
+    second: lava_projectile_48
+  - first:
+      213: -4779286631619771060
+    second: lava_projectile_49
+  - first:
+      213: 1123400230368072008
+    second: lava_projectile_50
+  - first:
+      213: 1912948034359282855
+    second: lava_projectile_51
+  - first:
+      213: 9026737168888804921
+    second: lava_projectile_52
+  - first:
+      213: 7131478477010126257
+    second: lava_projectile_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lava_projectile_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 459
+        width: 63
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7e4ae1c34bb5410800000000000000
+      internalID: 1466964273944389568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_projectile_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 459
+        width: 61
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f6da4cb780699f0800000000000000
+      internalID: -462172584085196986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_projectile_2
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 459
+        width: 60
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fe796ade7eec690800000000000000
+      internalID: -7579866114929725592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_projectile_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 253
+        width: 62
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7793629f800f4d5f0800000000000000
+      internalID: -732696918024111753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_projectile_4
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 257
+        width: 61
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c870d08213f38e620800000000000000
+      internalID: 2803560248396023692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_projectile_7
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 263
+        width: 57
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35774ed5a45d888b0800000000000000
+      internalID: -5149631658518612141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_projectile_8
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 55
+        width: 54
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff00595d7d525a610800000000000000
+      internalID: 1631752048923181311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_projectile_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 45
+        width: 58
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9b4158cf1ee4960800000000000000
+      internalID: 7588250896846600620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_projectile_50
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 51
+        width: 52
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8415ea7be8e179f00800000000000000
+      internalID: 1123400230368072008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0cb36308e55ed8e41ab3643e890479c6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lava_projectile_0: 1466964273944389568
+      lava_projectile_1: -462172584085196986
+      lava_projectile_10: 4881843851452554942
+      lava_projectile_11: 4353843195910391479
+      lava_projectile_12: -824175546950532387
+      lava_projectile_13: -2904437205900133895
+      lava_projectile_14: -247102960576875026
+      lava_projectile_15: 7588250896846600620
+      lava_projectile_16: 1136610758828163076
+      lava_projectile_17: -3585545036563122726
+      lava_projectile_18: 6491865307471845227
+      lava_projectile_19: -7490754160999901788
+      lava_projectile_2: -7579866114929725592
+      lava_projectile_20: 5186256558378029608
+      lava_projectile_21: 8537476491734527931
+      lava_projectile_22: -8155993858866502461
+      lava_projectile_23: -865722392747102661
+      lava_projectile_24: -1446755696471547852
+      lava_projectile_25: -7861948869712240381
+      lava_projectile_26: -9071738320396897937
+      lava_projectile_27: 9017273152925838922
+      lava_projectile_28: -5102486488020082723
+      lava_projectile_29: 3358359142992435769
+      lava_projectile_3: -732696918024111753
+      lava_projectile_30: -6713593753892938374
+      lava_projectile_31: 4430390512310753676
+      lava_projectile_32: 4349121722063811143
+      lava_projectile_33: 2821934415515909504
+      lava_projectile_34: 6695908236194726068
+      lava_projectile_35: 1293280531505568363
+      lava_projectile_36: 8327947799366403195
+      lava_projectile_37: -8212034993670246473
+      lava_projectile_38: -3603231565604420169
+      lava_projectile_39: 4362818690890861698
+      lava_projectile_4: 2803560248396023692
+      lava_projectile_40: 1628656008460917532
+      lava_projectile_41: 872742261869328194
+      lava_projectile_42: -3095333369794541669
+      lava_projectile_43: -9179614229045285380
+      lava_projectile_44: 2276260117177142018
+      lava_projectile_45: 7614213451543752259
+      lava_projectile_46: 4847275986823898447
+      lava_projectile_47: 4301025569179656364
+      lava_projectile_48: 7754011963713307249
+      lava_projectile_49: -4779286631619771060
+      lava_projectile_5: -8373372901464361049
+      lava_projectile_50: 1123400230368072008
+      lava_projectile_51: 1912948034359282855
+      lava_projectile_52: 9026737168888804921
+      lava_projectile_53: 7131478477010126257
+      lava_projectile_6: 6682402126542447481
+      lava_projectile_7: -5149631658518612141
+      lava_projectile_8: 1631752048923181311
+      lava_projectile_9: 6567815133041336045
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

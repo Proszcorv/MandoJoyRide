@@ -11,4 +11,7 @@ public class PlanetData : ScriptableObject
     public int scoreThreshold;
     public Vector3 skyScale = Vector3.one;
     public GameObject groundObstaclePrefab;
+    public GameObject projectileObstaclePrefab;
+    public AudioClip projectileSound;
+    public AudioSource projectileSource;
 }

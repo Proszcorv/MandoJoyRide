@@ -30,6 +30,14 @@ public class PlanetManager : MonoBehaviour
         {
             groundSpawner.SetObstaclePrefab(planet.groundObstaclePrefab);
         }
+        if (groundSpawner != null && planet.projectileObstaclePrefab != null)
+        {
+            groundSpawner.SetProjectilePrefab(planet.projectileObstaclePrefab);
+        }
+        if (planet.projectileSource != null && planet.projectileSound != null)
+        {
+            planet.projectileSource.clip = planet.projectileSound;
+        }
     }
 
     public void SelectPlanet(int planetIndex)

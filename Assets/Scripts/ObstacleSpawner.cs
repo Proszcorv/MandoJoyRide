@@ -1,8 +1,10 @@
 using UnityEngine;
+using System.Collections;
 
 public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject obstaclePrefab;
+    [SerializeField] private GameObject projectilePrefab;
 
     [Header("Spawner Típusa")]
     [SerializeField] private bool isGroundSpawner = false;
@@ -16,7 +18,10 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private float minPossibleTime = 0.6f;
 
     [SerializeField] private AudioClip tieSpawnSound;
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource tieaudioSource;
+
+    [SerializeField] private AudioClip projectileSpawnSound;
+    [SerializeField] private AudioSource projectileAudioSource;
 
     private float timer = 0f;
     private float nextSpawnTime;
@@ -56,9 +61,28 @@ public class ObstacleSpawner : MonoBehaviour
         Vector3 spawnPos = new Vector3(transform.position.x, spawnY, 0);
         Instantiate(obstaclePrefab, spawnPos, Quaternion.identity);
 
-        if (!isGroundSpawner && tieSpawnSound != null && audioSource != null)
+        GameObject spawnedObj = Instantiate(obstaclePrefab, spawnPos, Quaternion.identity);
+
+        if (projectilePrefab != null)
         {
-            audioSource.PlayOneShot(tieSpawnSound);
+            if (isGroundSpawner)
+            {
+                if (Random.value > 0.3f)
+                {
+                    StartCoroutine(SpawnProjectileDelayed(spawnedObj, true));
+                }
+            }
+            else
+            {
+                StartCoroutine(SpawnProjectileDelayed(spawnedObj, false));
+            }
+        }
+
+
+
+        if (!isGroundSpawner && tieSpawnSound != null && tieaudioSource != null)
+        {
+            tieaudioSource.PlayOneShot(tieSpawnSound);
         }
     }
 
@@ -67,6 +91,41 @@ public class ObstacleSpawner : MonoBehaviour
         if (newPrefab != null)
         {
             obstaclePrefab = newPrefab;
+        }
+    }
+
+    public void SetProjectilePrefab(GameObject newProjectilePrefab)
+    {
+        if (newProjectilePrefab != null)
+        {
+            projectilePrefab = newProjectilePrefab;
+        }
+    }
+
+    IEnumerator SpawnProjectileDelayed(GameObject parentObj, bool isGround)
+    {
+        float delay = isGround ? Random.Range(3f, 4.5f) : Random.Range(0.3f, 0.7f);
+
+        yield return new WaitForSeconds(delay);
+
+        if (parentObj != null)
+        {
+            Vector3 projPos = parentObj.transform.position;
+
+            if (isGround)
+            {
+                projPos += new Vector3(0, 2f, 0);
+            }
+            else {
+                projPos += new Vector3(-0.7f, -0.23f, 0);
+            }
+
+            Instantiate(projectilePrefab, projPos, Quaternion.identity);
+
+            if (projectileSpawnSound != null && projectileAudioSource != null)
+            {
+                projectileAudioSource.PlayOneShot(projectileSpawnSound);
+            }
         }
     }
 }

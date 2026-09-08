@@ -286,13 +286,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
   obstaclePrefab: {fileID: 3310017645708670742, guid: 6ef3564c16aca1f45ad06e7d82aad620, type: 3}
+  projectilePrefab: {fileID: 0}
   isGroundSpawner: 1
   minSpawnTime: 10
   maxSpawnTime: 12
   difficultyRate: 0.3
   minPossibleTime: 0.6
   tieSpawnSound: {fileID: 0}
-  audioSource: {fileID: 0}
+  tieaudioSource: {fileID: 0}
+  projectileSpawnSound: {fileID: 0}
+  projectileAudioSource: {fileID: 0}
 --- !u!4 &397109153
 Transform:
   m_ObjectHideFlags: 0
@@ -3664,6 +3667,7 @@ GameObject:
   - component: {fileID: 1659879781}
   - component: {fileID: 1659879780}
   - component: {fileID: 1659879783}
+  - component: {fileID: 1659879784}
   m_Layer: 0
   m_Name: AirSpawner
   m_TagString: Untagged
@@ -3684,13 +3688,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
   obstaclePrefab: {fileID: 3310017645708670742, guid: 92ff2eb7791a1284693e35dff8b3189d, type: 3}
+  projectilePrefab: {fileID: 3310017645708670742, guid: abe99d115e31e2c4081395b772d1537f, type: 3}
   isGroundSpawner: 0
   minSpawnTime: 8
   maxSpawnTime: 10
   difficultyRate: 0.1
   minPossibleTime: 0.6
   tieSpawnSound: {fileID: 8300000, guid: 43de58894f7353f469bb91a795476586, type: 3}
-  audioSource: {fileID: 1659879783}
+  tieaudioSource: {fileID: 1659879783}
+  projectileSpawnSound: {fileID: 8300000, guid: 8b4a4de8f35ad9649af9e62e3c2f749a, type: 3}
+  projectileAudioSource: {fileID: 1659879784}
 --- !u!4 &1659879781
 Transform:
   m_ObjectHideFlags: 0
@@ -3720,6 +3727,103 @@ AudioSource:
   m_Resource: {fileID: 8300000, guid: 43de58894f7353f469bb91a795476586, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.022
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1659879784
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659879779}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 8b4a4de8f35ad9649af9e62e3c2f749a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.048
   m_Pitch: 1
   Loop: 0
   Mute: 0
