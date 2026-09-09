@@ -56,7 +56,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     void SpawnObstacle()
     {
-        float spawnY = isGroundSpawner ? -4.3f : Random.Range(-1f, 4.5f);
+        float spawnY = isGroundSpawner ? -4.3f : Random.Range(-1f, 5.5f);
 
         Vector3 spawnPos = new Vector3(transform.position.x, spawnY, 0);
         Instantiate(obstaclePrefab, spawnPos, Quaternion.identity);

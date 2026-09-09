@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4971973778942790156}
   - component: {fileID: -3589947591049605440}
   - component: {fileID: 782169007521453367}
+  - component: {fileID: -8017533053639979136}
   m_Layer: 0
   m_Name: lava_projectile
   m_TagString: Obstacle
@@ -176,3 +177,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveLeft
   speedMultiplier: 0.99
+--- !u!114 &-8017533053639979136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5054685518342509746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee9c94b7e5d00f4fbf9838cd45ddd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyAfterAnimation
+  lifetime: 1
