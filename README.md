@@ -1,46 +1,49 @@
 # MandoJoyRide
 
-A 2D pixel-art endless runner built in Unity, starring a Mandalorian-style bounty hunter who uses a jetpack to dodge obstacles across the galaxy.
+**[🕹️ Play MandoJoyRide on itch.io!](https://proszcorv.itch.io/mando-joyride)**
+
+A 2D pixel-art endless runner built in Unity, starring a Mandalorian-style bounty hunter who uses a jetpack to dodge obstacles across the galaxy. Playable directly in desktop and mobile browsers!
 
 ## Gameplay
 
-- **Jetpack flight**: hold the thrust button to fly, release to fall. Thrusting builds up heat on a thermometer-style meter — let it cool down, or push your luck and risk exploding if you hold it too long at max heat.
-- **Obstacles**: rocks on the ground and TIE fighters in the air, each with their own relative speed, spawning at an increasing rate as the run goes on.
-- **Score**: increases automatically over time. Reach a high score to unlock the option to travel to a new planet.
-- **Planets**: start on Tatooine; unlock new planets (currently adding Mustafar) with their own background, terrain, and color palette.
+* **Jetpack flight**: Hold the thrust button to fly, release to fall. Thrusting builds up heat on a thermometer-style meter — let it cool down, or push your luck and risk exploding if you hold it too long at max heat.
+* **Obstacles**: Rocks/lava pits on the ground and projectiles in the air, each with their own relative speed, spawning at an increasing rate as the run goes on.
+* **Score**: Increases automatically over time. Reach a high score (1000 points) to unlock the option to travel to a new planet.
+* **Planets**: Start on Tatooine; unlock new planets (like Mustafar) featuring their own unique backgrounds, terrain, color palettes, custom obstacles, and audio cues.
 
 ## Controls
 
-- **Jump / Left Mouse Button**: activate jetpack thrust
+* **Spacebar / Left Mouse Button / Touch Screen**: Activate jetpack thrust.
 
 ## Project structure
 
-```
+```text
 Assets/
 ├── Scenes/       Main Menu and gameplay scenes
 ├── Scripts/      Gameplay, UI, and audio scripts
 ├── Sprites/      Character, obstacle, effect, UI, and planet artwork
 ├── Sounds/       Music and sound effects
 └── Prefabs/      Reusable objects (explosion effect, etc.)
+
 ```
 
 ## Key systems
 
-- **`JetpackController`** — movement, thrust input, ground detection, and death handling (collision or overheat).
-- **`JetpackHeatMeter`** — tracks heat buildup/cooldown, drives the thermometer UI (color transition + shake warning), and triggers an explosion if overheated too long.
-- **`ScoreManager`** — score tracking, Game Over UI, high score persistence (`PlayerPrefs`), and the New Planet unlock condition.
-- **`GameSpeedManager`** — shared base speed that the background and obstacles scale from, so everything accelerates together as the run progresses.
-- **`ObstacleSpawner`** — spawns obstacles at a difficulty curve that ramps up over time.
-- **`PlanetData` / `PlanetManager`** — ScriptableObject-based system for swapping a planet's background, mountains, ground, and floor color, with progress saved between runs.
-- **`MenuManager`** — main menu navigation (Play / Planets panel).
-- **`MusicManager`** — background music playback.
+* **`JetpackController`** — Movement, thrust input (keyboard/mouse/touch), ground detection, and death handling (collision or overheat).
+* **`JetpackHeatMeter`** — Tracks heat buildup/cooldown, drives the thermometer UI (color transition + shake warning), and triggers an explosion if overheated too long.
+* **`ScoreManager`** — Score tracking, Game Over UI, high score persistence (`PlayerPrefs`), and the New Planet unlock conditions.
+* **`GameSpeedManager`** — Shared base speed that the background and obstacles scale from, so everything accelerates together as the run progresses.
+* **`ObstacleSpawner`** — Spawns obstacles at a difficulty curve that ramps up over time, handling custom prefabs per planet.
+* **`PlanetData` / `PlanetManager**` — ScriptableObject-based system for swapping a planet's visual assets, obstacles, and sound effects, with unlock progress saved between runs.
+* **`MenuManager`** — Main menu navigation, dynamic planet selection panels, and progression UI.
+* **`MusicManager`** — Background music playback and environment-specific sounds.
 
 ## Built with
 
-- Unity 6
-- TextMesh Pro (UI text, pixel font)
-- 2D Sprite / Physics2D
+* Unity 6
+* TextMesh Pro (UI text, pixel font)
+* 2D Sprite / Physics2D
 
 ## Status
 
-Actively in development. Core loop (jetpack flight, obstacles, scoring, Game Over/Restart, heat meter, audio) is complete. Currently building out the multi-planet system and main menu.
+Fully playable and published for WebGL (Desktop & Mobile). The core gameplay loop, multi-planet progression system, UI, and mobile touch controls are complete.
