@@ -70,7 +70,7 @@ public class JetpackController : MonoBehaviour
             footstepTimer = 0f; 
         }
 
-        bool wantsThrust = Input.GetButton("Jump") || Input.GetMouseButton(0);
+        bool wantsThrust = Input.GetButton("Jump") || Input.GetMouseButton(0) || Input.touchCount > 0;
 
         if (wantsThrust)
         {
